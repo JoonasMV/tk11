@@ -1,9 +1,6 @@
 package entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Cascade;
-
-import java.util.Date;
 
 @Entity
 public class BasicProfile {
@@ -15,7 +12,9 @@ public class BasicProfile {
     private double weight;
     private double height;
 
+    @JoinColumn
     @OneToOne(cascade = CascadeType.ALL)
+    @MapsId
     private Customer customer;
 
     public BasicProfile() {

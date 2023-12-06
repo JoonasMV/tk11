@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Customer {
 
     @Id
@@ -15,9 +16,6 @@ public class Customer {
 
     @ManyToMany(mappedBy = "customers")
     private List<Clinic> clinics;
-
-    @OneToOne(mappedBy = "customer")
-    private BasicProfile basicProfile;
 
     public Customer() {
     }

@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5423abd1-1174-41a2-834b-a809a8f95abd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/tk_jpa3.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/DeviceApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/FinanceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/FinanceTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/TestDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/TestDao2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/BasicProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/BasicProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/ContractCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/ContractCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +109,7 @@
       <workItem from="1700836594678" duration="8992000" />
       <workItem from="1701693316268" duration="3623000" />
       <workItem from="1701790603352" duration="153000" />
-      <workItem from="1701790767909" duration="6417000" />
+      <workItem from="1701790767909" duration="8804000" />
     </task>
     <servers />
   </component>
