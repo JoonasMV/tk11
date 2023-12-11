@@ -4,10 +4,10 @@
              version="3.0"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
 
-    <persistence-unit name="DevPU" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="tk13" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/health"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/tk13"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
             <property name="jakarta.persistence.jdbc.password" value="root"/>
             <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
@@ -19,23 +19,5 @@
 
         </properties>
     </persistence-unit>
-
-
-
-<!--    <persistence-unit name="DevPU2" transaction-type="RESOURCE_LOCAL">-->
-<!--        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
-<!--        <properties>-->
-<!--            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/tk_jpa"/>-->
-<!--            <property name="jakarta.persistence.jdbc.user" value="jpa_user"/>-->
-<!--            <property name="jakarta.persistence.jdbc.password" value="password"/>-->
-<!--            <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>-->
-
-<!--            <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheRegionFactoryAvailableException"/>-->
-<!--            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>-->
-<!--            <property name="hibernate.show_sql" value="true" />-->
-<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect" />-->
-
-<!--        </properties>-->
-<!--    </persistence-unit>-->
 </persistence>
 

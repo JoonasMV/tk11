@@ -1,32 +1,24 @@
 package dao;
 
-import entity.Clinic;
-import entity.Customer;
+import entity.Account;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 public class Dao {
-    EntityManagerFactory emf = Persistence.createEntityManagerFactory("DevPU");
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("tk13");
 
-    public void init() {
-        emf.createEntityManager();
+    public void saveAccount(Account account) {
+        EntityManager em = emf.createEntityManager();
+
+        em.getTransaction().begin();
+        em.persist(account);
+        em.getTransaction().commit();
     }
 
-    public <T> void save(T t) {
+    public Account getAccount(int number) {
         EntityManager em = emf.createEntityManager();
-        em.getTransaction().begin();
-        em.persist(t);
-        em.getTransaction().commit();
-        em.close();
-    }
 
-    public void addCustomerToClinic(Clinic clinic, Customer customer) {
-        EntityManager em = emf.createEntityManager();
-        em.getTransaction().begin();
-        clinic.addCustomer(customer);
-        em.merge(clinic);
-        em.getTransaction().commit();
-        em.close();
+        return em.find(Account.class, number);
     }
 }
