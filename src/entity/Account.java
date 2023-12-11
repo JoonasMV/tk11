@@ -9,12 +9,27 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int number;
+
     private double balance;
+    @Version
+    private int version;
 
     public Account() {
     }
 
     public Account(double balance) {
+        this.balance = balance;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
